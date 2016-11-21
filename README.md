@@ -1,5 +1,5 @@
 # Getting_and_cleaning_data
-This repo contains the R file "run_analysis.R", which gets data and cleans data, and a code book "CodeBook.Md", detailing the variables and summaries calculated.  
+This repo contains the R file "run_analysis.R", which gets data and cleans data, and a code book "codebook.md", detailing the variables and summaries calculated.  
   
 The analysis, taking part in the file "run_analysis.R" follows the following steps:  
 1. It merges the training and the test sets to create one data set. In this step, the variables are also given appropriate and descriptive names.  
