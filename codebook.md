@@ -22,7 +22,7 @@ i.e. the numbers were replaced by the second column in the mentioned file.
 which stem from a mean or standard deviation.  
 3) "tidy_data_mean_std": Data frame obtained by calculating for each subject and each activity the average for each variable of   "data_mean_std".  
   
-##Process steps of the analysis:  
+##Process steps of the analysis executed in "run_analysis.R":  
 1) Gathering data from different files  
 2) Merging different files into one data set. Then filtering this data set such that it only consists of variables that   
 represent a mean or standard deviation.   
