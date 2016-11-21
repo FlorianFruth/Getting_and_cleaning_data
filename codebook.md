@@ -2,7 +2,7 @@
 The data used in this repo can be retrieved from the following website:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-##Used data files from the above zip folder:
+##Used data files from the above zip folder:\n
 From this, the following data files were used:
 1) X_train.txt         (training data)
 2) X_test.txt          (test data)
