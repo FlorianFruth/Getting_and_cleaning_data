@@ -14,17 +14,17 @@ From this, the following data files were used:
 8) activity_labels.txt (meaningful description of activity labels)  
   
 ##Calculated variables:  
-1) activity_label: This variable was created from numeric values (ranging from 1-6) as suggested in the file activity_labels.txt,   
+1) activity_label: This variable was created from numeric values (ranging from 1-6) as suggested in the file activity_labels.txt,
 i.e. the numbers were replaced by the second column in the mentioned file.  
 2) mean_index: lists columns that contain "mean()"  
 3) std_index:  lists columns that contain "std()"  
-4) "data_mean_std": Data frame created from the previously mentioned files. For all subjects and all activities it lists variables,  
+4) "data_mean_std": Data frame created from the previously mentioned files. For all subjects and all activities it lists variables,
 which stem from a mean or standard deviation.  
-3) "tidy_data_mean_std": Data frame obtained by calculating for each subject and each activity the average for each variable of   "data_mean_std".  
+3) "tidy_data_mean_std": Data frame obtained by calculating for each subject and each activity the average for each variable of "data_mean_std".  
   
 ##Process steps of the analysis executed in "run_analysis.R":  
 1) Gathering data from different files  
-2) Merging different files into one data set. Then filtering this data set such that it only consists of variables that   
+2) Merging different files into one data set. Then filtering this data set such that it only consists of variables that
 represent a mean or standard deviation.   
-3) Calculating a tidy data set that contains for each subject and each activity the mean of all measured variables from   
+3) Calculating a tidy data set that contains for each subject and each activity the mean of all measured variables from
 the data set generated in step 2.  
