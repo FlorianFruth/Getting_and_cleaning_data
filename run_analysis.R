@@ -16,13 +16,14 @@
 # Set working directory:
 setwd("~/CourseraDataScienceSpecialization/R/data/UCI HAR Dataset")
 
-# Read in the feature list
-featurelist <- read.table("features.txt")
+
 
 # Read in the training and test data
 data_train <- read.table("./train/X_train.txt")
 data_test  <- read.table("./test/X_test.txt")
 
+# Read in the feature list
+featurelist <- read.table("features.txt")
 # Name data with appropriate labels using the feature.txt file
 colnames(data_train) <- featurelist[,2]
 colnames(data_test)  <- featurelist[,2]
@@ -97,5 +98,9 @@ for(activity in activity_list[,2]){
                 tidy_data_mean_std <- rbind(tidy_data_mean_std,record)
         }
 }
-colnames(tidy_data_mean_std)[1:2] <- c("subject ID", "activity")
+#convert the matrix into a data frame to save the variables as numeric
 rownames(tidy_data_mean_std)<-NULL
+tidy_data_mean_std <- data.frame(tidy_data_mean_std)
+tidy_data_mean_std[,1]<-as.numeric(as.character(tidy_data_mean_std[,1]))
+for(i in 3:ncol(tidy_data_mean_std)) tidy_data_mean_std[,i]<-as.numeric(as.character(tidy_data_mean_std[,i]))
+colnames(tidy_data_mean_std)[1:2] <- c("subject ID", "activity")
