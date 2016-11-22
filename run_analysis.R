@@ -97,4 +97,5 @@ for(activity in activity_list[,2]){
                 tidy_data_mean_std <- rbind(tidy_data_mean_std,record)
         }
 }
+colnames(tidy_data_mean_std)[1:2] <- c("subject ID", "activity")
 rownames(tidy_data_mean_std)<-NULL
