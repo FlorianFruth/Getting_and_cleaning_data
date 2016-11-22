@@ -13,10 +13,8 @@
 
 
 ## Step 1)  Merge the training and the test sets to create one data set
-# Set working directory:
-setwd("~/CourseraDataScienceSpecialization/R/data/UCI HAR Dataset")
-
-
+## You might want to set the working directory:
+## setwd("~/CourseraDataScienceSpecialization/R/data/UCI HAR Dataset")
 
 # Read in the training and test data
 data_train <- read.table("./train/X_train.txt")
