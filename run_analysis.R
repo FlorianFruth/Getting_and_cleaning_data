@@ -83,10 +83,10 @@ data_mean_std$activity_label <- sapply(data_mean_std$activity_label,
 
 #tidy_data_mean_std will be the final tidy data set
 tidy_data_mean_std <- NULL
-#looping through the 6 activities
-for(activity in activity_list[,2]){
-                #looping through the 30 subjects
-                for(subject in 1:30){
+#looping through the 30 subjects
+for(subject in 1:30){
+        #looping through the 6 activities
+        for(activity in activity_list[,2]){
                 #extract the rows with the current subject and actitivity  
                 temp <- subset(data_mean_std,
                                data_mean_std$activity_label==activity 
