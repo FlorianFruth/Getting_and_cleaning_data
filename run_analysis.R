@@ -86,11 +86,14 @@ tidy_data_mean_std <- NULL
 for(activity in activity_list[,2]){
                 #looping through the 30 subjects
                 for(subject in 1:30){
+                #extract the rows with the current subject and actitivity  
                 temp <- subset(data_mean_std,
                                data_mean_std$activity_label==activity 
                                & data_mean_std$subject_number==subject)
+                #calculate the mean for each column  
                 result <- colMeans(temp[,(3:ncol(data_mean_std))])
                 record <- c(subject, activity, result)
+                #append the result  
                 tidy_data_mean_std <- rbind(tidy_data_mean_std,record)
         }
 }
